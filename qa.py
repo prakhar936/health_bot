@@ -24,9 +24,9 @@ if 'chat_history' not in st.session_state:
 
 
 input=st.text_input("Input:",key="input")
-submit=st.button("Ask the question")
+# submit=st.button("Ask the question")
 
-if submit and input:
+if input:
     prompt = """Now remember that you are a health chatbot and only gonna address questions or input is related to health.It can be a 
     diet related question or workout related question, keep you answer plain and simple and don't share any unnecessary information.
     Don't add anything to the output which is not asked.If the text input is something not related to health in any way you
