@@ -29,8 +29,9 @@ submit=st.button("Ask the question")
 if submit and input:
     prompt = """Now remember that you are a health chatbot and only gonna address questions or input is related to health.It can be a 
     diet related question or workout related question, keep you answer plain and simple and don't share any unnecessary information.
-    Don't add anything to the output which is not asked. You read the text given after the 
-    alphabet Q and answer to that text as instructed. Q"""
+    Don't add anything to the output which is not asked.If the text input is something not related to health in any way you
+    just give output "I don't have information regarding this topic".
+    You read the text given after the alphabet Q and answer to that text as instructed. Q"""
 
     question = prompt + input
     response=get_gemini_response(question)
